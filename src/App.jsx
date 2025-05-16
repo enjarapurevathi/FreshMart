@@ -16,7 +16,8 @@ import CartComponent from "./CartComponent";
 import Home from "./Home";
 import PageNotFound from "./PageNotFound";
 import Signup from "./Signup";
-import Orders from "./Orders";
+// import Orders from "./Orders";
+import Orders from "./Orders"; // ✅ Correct
 
 
 import './App.css';
@@ -73,7 +74,7 @@ function App() {
           <Route path="/Milk" element={<Milk />} />
           <Route path="/Chocolate" element={<Chocolate />} />
           <Route path="/signing" element={<Signing />} />
-          <Route path="/Orders" element={<Orders />} />
+          <Route path="/Orders" element={<Orders/>} />
           <Route path="/AboutUs" element={<AboutUs />} />
           <Route path="/ContactUs" element={<ContactUs />} />
           <Route path="/CartComponent" element={<CartComponent />} />
