@@ -10,13 +10,14 @@ import Nonveg from "./Nonveg";
 import Milk from "./Milk";
 import Chocolate from "./Chocolate";
 import Signing from "./Signing";
-import Orders from "./Orders";
 import AboutUs from "./AboutUs";
 import ContactUs from "./ContactUs";
 import CartComponent from "./CartComponent";
 import Home from "./Home";
 import PageNotFound from "./PageNotFound";
 import Signup from "./Signup";
+import Orders from "./Orders";
+
 
 import './App.css';
 import { logoutUser } from "./Store";
