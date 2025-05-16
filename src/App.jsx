@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useDispatch, useSelector } from "react-redux";
 
 // Import components
-import Veg from "./veg";
+import Veg from "./Veg";
 import Nonveg from "./Nonveg";
 import Milk from "./Milk";
 import Chocolate from "./Chocolate";
