@@ -16,8 +16,8 @@ import CartComponent from "./CartComponent";
 import Home from "./Home";
 import PageNotFound from "./PageNotFound";
 import Signup from "./Signup";
-// import Orders from "./Orders";
-import Orders from "./Orders"; // ✅ Correct
+import Orders from "./Orders";
+// import Orders from "./Orders"; // ✅ Correct
 
 
 import './App.css';
