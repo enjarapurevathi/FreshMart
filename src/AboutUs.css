@@ -1,0 +1,124 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Page Container */
+.page {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 30px;
+}
+
+/* Card Style */
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  margin-bottom: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+.card h1, .card h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+/* Paragraphs */
+.card p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #4f5f6f;
+}
+
+/* Section-Specific Color Highlights */
+.about-section h1 {
+  color: #0d47a1;
+}
+
+.location-section h2 {
+  color: #2c3e50;
+}
+
+.location-section p {
+  color: #3f51b5;
+}
+
+.company-info-section h2 {
+  color: #c62828;
+}
+
+.company-info-section p {
+  color: #d81b60;
+}
+
+.partnerships-section h2 {
+  color: #00695c;
+}
+
+.partnerships-section p {
+  color: #00897b;
+}
+
+.testimonials-section h2 {
+  color: #388e3c;
+}
+
+.testimonials-section p {
+  color: #00796b;
+}
+
+.testimonials-section p:last-child {
+  font-style: italic;
+  color: #1e88e5;
+}
+
+/* Google Maps Responsive Container */
+.map-container {
+  margin-top: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .page {
+    padding: 0 15px;
+  }
+
+  .card {
+    padding: 20px;
+    margin-bottom: 25px;
+  }
+
+  .card h1, .card h2 {
+    font-size: 1.6rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+  }
+
+  .map-container iframe {
+    height: 200px;
+  }
+}

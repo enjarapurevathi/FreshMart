@@ -1,0 +1,35 @@
+.Orders-wrapper {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.Orders-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.Orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.Orders-table th,
+.Orders-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.Orders-table th {
+  background-color: #f0f0f0;
+}
+
+.Orders-table tr:nth-child(even) {
+  background-color: #fafafa;
+}

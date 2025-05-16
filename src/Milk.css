@@ -1,0 +1,232 @@
+/* Container */
+.milk-container {
+  padding: 60px 30px;
+  background: #f4f6f9;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  box-sizing: border-box;
+}
+
+/* Title */
+.milk-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+/* Description */
+.milk-description {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Layout */
+.milk-content {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Sidebar for Filters */
+.milk-sidebar {
+  width: 250px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+}
+
+.milk-sidebar h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #2c3e50;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.milk-filter {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  color: #555;
+  cursor: pointer;
+}
+
+.milk-filter input {
+  margin-right: 8px;
+}
+
+.milk-price-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.milk-price-card {
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.milk-price-card:hover {
+  background-color: #f1f1f1;
+}
+
+.milk-price-card.selected {
+  border-color: #3498db;
+  background-color: #ecf5ff;
+}
+
+.milk-price-card input {
+  margin-right: 10px;
+}
+
+/* Product Grid */
+.milk-products-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  flex: 1;
+}
+
+/* Product Card */
+.milk-product-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+.milk-product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.product-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.product-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2d3436;
+  margin: 12px 0 4px;
+  padding: 0 10px;
+}
+
+.product-price {
+  font-size: 1rem;
+  color: #27ae60;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+/* Add to Cart Button */
+.add-to-cart-btn {
+  background: linear-gradient(to right, #00b894, #00cec9);
+  color: white;
+  font-weight: 600;
+  padding: 10px 0;
+  border: none;
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 0 0 16px 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background: linear-gradient(to right, #00a383, #00b4b0);
+}
+
+/* Clear Filters Button */
+.clear-filters-button {
+  background-color: orange;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.clear-filters-button:hover {
+  background-color: purple;
+}
+
+/* Pagination Controls */
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pagination-controls button {
+  background: purple;
+  color: palevioletred;
+  border: 2px solid #2980b9;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pagination-controls button:hover {
+  background: greenyellow;
+  color: white;
+  transform: scale(1.05);
+}
+
+.pagination-controls button:disabled {
+  background: #639024;
+  color: yellow;
+  border-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .milk-products-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .milk-products-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .milk-products-container {
+    grid-template-columns: 1fr;
+  }
+}

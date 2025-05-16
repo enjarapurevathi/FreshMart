@@ -1,0 +1,13 @@
+.star-rating {
+  display: flex;
+  gap: 2px;
+}
+
+.star {
+  font-size: 20px;
+  color: #ccc; /* empty star color */
+}
+
+.star.filled {
+  color: #FFD700; /* gold color */
+}
