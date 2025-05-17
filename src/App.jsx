@@ -25,6 +25,7 @@ import TermsAndConditions from "./TermsAndConditions";
 import PrivacyPolicy from "./PrivacyPolicy";
 import Orders from "./Orders";
 
+
 function App() {
   const cartItems = useSelector((state) => state.cart);
   const cartCount = cartItems.reduce((total, item) => total + item.quantity, 0);
@@ -78,7 +79,7 @@ function App() {
           <Route path="/Milk" element={<Milk />} />
           <Route path="/Chocolate" element={<Chocolate />} />
           <Route path="/signing" element={<Signing />} />
-          <Route path="/Orders" element={<Orders/>} />
+          <Route path="/Orders" element={<Orders/>}/>
           <Route path="/AboutUs" element={<AboutUs />} />
           <Route path="/ContactUs" element={<ContactUs />} />
           <Route path="/CartComponent" element={<CartComponent />} />
