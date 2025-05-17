@@ -4,7 +4,8 @@ body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f9f9f9;
-  padding-top: 80px; /* height of the header */
+  padding-top: 80px;
+   text-align: center; 
 }
 
 header {

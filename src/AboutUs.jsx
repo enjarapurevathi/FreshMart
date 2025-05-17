@@ -7,7 +7,7 @@ function AboutUs() {
       {/* About FreshMart Section */}
       <div className="card about-section">
         <h1>About FreshMart 🌱</h1>
-        <p>
+        <p style={{color:"black"}}>
           We’re a modern grocery store built on old-school values: quality, trust,
           and service. Started in 2020, FreshMart helps thousands of customers
           enjoy fresh and affordable food, every single day.

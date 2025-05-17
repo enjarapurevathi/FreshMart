@@ -5,6 +5,7 @@
   min-height: 100vh;
   font-family: 'Segoe UI', sans-serif;
   box-sizing: border-box;
+  background-image: url('/images/milklogo.jpg');
 }
 
 /* Title */

@@ -16,12 +16,14 @@ import CartComponent from "./CartComponent";
 import Home from "./Home";
 import PageNotFound from "./PageNotFound";
 import Signup from "./Signup";
-import Orders from "./Orders";
 // import Orders from "./Orders"; // ✅ Correct
 
 
 import './App.css';
 import { logoutUser } from "./Store";
+import Orders from "./Orders";
+import TermsAndConditions from "./TermsAndConditions";
+import PrivacyPolicy from "./PrivacyPolicy";
 
 function App() {
   const cartItems = useSelector((state) => state.cart);
@@ -63,6 +65,8 @@ function App() {
           <Link to="/Orders"><FaBoxOpen className="nav-icon orders-icon" /> Orders</Link>
           <Link to="/AboutUs"><FaInfoCircle className="nav-icon about-icon" /> About Us</Link>
           <Link to="/ContactUs"><FaPhone className="nav-icon contact-icon" /> Contact Us</Link>
+          <Link to="/terms"><FaPhone className="nav-icon contact-icon" />TermsAndConditions </Link>
+          <Link to="/privacy"><FaPhone className="nav-icon contact-icon" /> PrivacyPolicy</Link>
         </nav>
       </header>
 
@@ -80,6 +84,9 @@ function App() {
           <Route path="/CartComponent" element={<CartComponent />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="*" element={<PageNotFound />} />
+          <Route path="/terms" element={<TermsAndConditions />} />
+         <Route path="/privacy" element={<PrivacyPolicy />} />
+
         </Routes>
       </main>
     </BrowserRouter>

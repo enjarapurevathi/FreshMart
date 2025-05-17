@@ -49,7 +49,7 @@ function Orders() {
 
   return (
     <div className="orders-container">
-      <h2>Order History</h2>
+      <h2 style={{color:"blue"}}>Order History</h2>
       {orderDetailsList.length === 0 ? (
         <p>No orders have been placed yet.</p>
       ) : (

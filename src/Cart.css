@@ -29,6 +29,7 @@ body {
   text-align: center;
   font-size: 24px;
   font-weight: bold;
+  
 }
 
 /* Cart Container */
@@ -38,6 +39,7 @@ body {
   align-items: flex-start;
   padding-top: 180px; /* Leaves space for fixed header */
   min-height: 100vh;
+  background-image: url('/images/scanner.jpg');
 }
 
 .cart-container {

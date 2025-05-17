@@ -4,7 +4,7 @@
   padding: 20px;
   background-color: white;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(182, 27, 138, 0.1);
 }
 
 .Orders-title {
@@ -22,7 +22,7 @@
 .Orders-table th,
 .Orders-table td {
   padding: 12px;
-  border: 1px solid #ddd;
+  border: 1px solid #8de028;
   text-align: left;
 }
 
@@ -31,5 +31,5 @@
 }
 
 .Orders-table tr:nth-child(even) {
-  background-color: #fafafa;
+  background-color: #d36767;
 }

@@ -5,6 +5,7 @@
   min-height: 100vh;
   font-family: 'Segoe UI', sans-serif;
   box-sizing: border-box;
+  background-image: url('/images/R.jpg');
 }
 
 /* Title */
@@ -12,7 +13,7 @@
   font-size: 2.8rem;
   font-weight: 800;
   text-align: center;
-  color: #b71c1c;
+  color:white;
   margin-bottom: 40px;
   text-transform: uppercase;
 }
@@ -27,13 +28,13 @@
 
 .price-slider-label {
   font-size: 1.1rem;
-  color: #2c3e50;
+  color: #2d79c5;
   margin-bottom: 8px;
 }
 
 .price-range-slider {
   width: 280px;
-  accent-color: #b71c1c;
+  accent-color: #500cce;
 }
 
 .price-slider-value {
@@ -85,7 +86,7 @@
 
 .nonveg-item-price {
   font-size: 1rem;
-  color: #d63031;
+  color: #13c11b;
   font-weight: 600;
   margin-bottom: 10px;
 }
@@ -97,7 +98,7 @@
 
 /* Button */
 .add-cart-button {
-  background: linear-gradient(to right, #d63031, #e17055);
+  background: linear-gradient(to right, yellow, #e17055);
   color: white;
   font-weight: 600;
   padding: 10px 0;
