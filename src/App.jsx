@@ -16,14 +16,14 @@ import CartComponent from "./CartComponent";
 import Home from "./Home";
 import PageNotFound from "./PageNotFound";
 import Signup from "./Signup";
-// import Orders from "./Orders"; // ✅ Correct
 
 
 import './App.css';
 import { logoutUser } from "./Store";
-import Orders from "./Orders";
+
 import TermsAndConditions from "./TermsAndConditions";
 import PrivacyPolicy from "./PrivacyPolicy";
+import Orders from "./Orders";
 
 function App() {
   const cartItems = useSelector((state) => state.cart);
