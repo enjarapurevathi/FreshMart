@@ -20,7 +20,7 @@ function Signup() {
     alert("Registration Successful");
 
     // Redirect to Sign In
-    navigate('/signin');
+    navigate('/Signing');
   };
 
   return (
@@ -75,7 +75,7 @@ function Signup() {
       </form>
 
       <p>
-        Already have an account? <Link to="/signin">Sign In</Link>
+        Already have an account? <Link to="/Signing">Sign In</Link>
       </p>
     </div>
   );

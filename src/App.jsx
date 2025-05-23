@@ -50,7 +50,7 @@ function App() {
           ) : (
             // Show Sign In button when not authenticated
             <div className="auth-links">
-              <Link to="/signing"><FaLock /> Sign In</Link>
+              <Link to="/Signing"><FaLock /> Sign In</Link>
             </div>
           )}
 
@@ -68,6 +68,7 @@ function App() {
           <Link to="/ContactUs"><FaPhone className="nav-icon contact-icon" /> Contact Us</Link>
           <Link to="/terms"><FaPhone className="nav-icon contact-icon" />TermsAndConditions </Link>
           <Link to="/privacy"><FaPhone className="nav-icon contact-icon" /> PrivacyPolicy</Link>
+          
         </nav>
       </header>
 
@@ -78,12 +79,12 @@ function App() {
           <Route path="/NonVeg" element={<Nonveg />} />
           <Route path="/Milk" element={<Milk />} />
           <Route path="/Chocolate" element={<Chocolate />} />
-          <Route path="/signing" element={<Signing />} />
+          <Route path="/Signing" element={<Signing />} />
           <Route path="/Orders" element={<Orders/>}/>
           <Route path="/AboutUs" element={<AboutUs />} />
           <Route path="/ContactUs" element={<ContactUs />} />
           <Route path="/CartComponent" element={<CartComponent />} />
-          <Route path="/signup" element={<Signup />} />
+          <Route path="/Signup" element={<Signup />} />
           <Route path="*" element={<PageNotFound />} />
           <Route path="/terms" element={<TermsAndConditions />} />
          <Route path="/privacy" element={<PrivacyPolicy />} />
