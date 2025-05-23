@@ -1,29 +1,37 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 import './Signing.css';
 
 function Signing() {
-  const { register, handleSubmit, setError } = useForm();
+  const {
+    register,
+    handleSubmit,
+    setError,
+    formState: { errors }
+  } = useForm();
   const navigate = useNavigate();
 
   const onSubmit = (data) => {
-    // Get all registered users from localStorage
+    // Get registered users from localStorage
     const users = JSON.parse(localStorage.getItem('users')) || [];
 
-    // Check if user exists and password matches
+    // Check for valid user
     const validUser = users.find(
-      (user) => user.username === data.username && user.password === data.password
+      (user) =>
+        user.username.trim().toLowerCase() === data.username.trim().toLowerCase() &&
+        user.password === data.password
     );
 
     if (validUser) {
       alert("Login Successful");
-      // You can optionally save logged-in user info separately
       localStorage.setItem("loggedInUser", JSON.stringify(validUser));
-      navigate('/Veg'); // Redirect after login
+      navigate('/Veg'); // Redirect to Veg page
     } else {
-      // Show error if credentials are invalid
-      setError("username", { type: "manual", message: "Invalid username or password" });
+      setError("username", {
+        type: "manual",
+        message: "Invalid username or password"
+      });
     }
   };
 
@@ -36,16 +44,20 @@ function Signing() {
             <input
               type="text"
               placeholder="Username"
-              {...register('username', { required: true })}
+              {...register('username', { required: "Username is required" })}
             />
+            {errors.username && <p className="error-message">{errors.username.message}</p>}
           </div>
+
           <div className="input-group">
             <input
               type="password"
               placeholder="Password"
-              {...register('password', { required: true })}
+              {...register('password', { required: "Password is required" })}
             />
+            {errors.password && <p className="error-message">{errors.password.message}</p>}
           </div>
+
           <button type="submit" className="sign-in-btn">Sign In</button>
         </form>
         <p className="signup-link">
