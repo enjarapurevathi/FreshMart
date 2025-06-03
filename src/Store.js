@@ -209,7 +209,7 @@ store.subscribe(() => {
 //   localStorage.removeItem("currentUser");
 // };
 
-export const { registeruser, loginUser, logoutUser } = userSlice.actions;
+export const { registerUser, loginUser, logoutUser } = userSlice.actions;
 
 
 export const{orderDetails}=orderSlice.actions;
