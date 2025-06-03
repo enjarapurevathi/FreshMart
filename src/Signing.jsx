@@ -1,6 +1,6 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom'; // ✅ use Link instead of <a>
 import './Signing.css';
 
 function Signing() {
@@ -13,10 +13,8 @@ function Signing() {
   const navigate = useNavigate();
 
   const onSubmit = (data) => {
-    // Get registered users from localStorage
     const users = JSON.parse(localStorage.getItem('users')) || [];
 
-    // Check for valid user
     const validUser = users.find(
       (user) =>
         user.username.trim().toLowerCase() === data.username.trim().toLowerCase() &&
@@ -26,7 +24,7 @@ function Signing() {
     if (validUser) {
       alert("Login Successful");
       localStorage.setItem("loggedInUser", JSON.stringify(validUser));
-      navigate('/Veg'); // Redirect to Veg page
+      navigate('/veg'); // ✅ lowercase path
     } else {
       setError("username", {
         type: "manual",
@@ -60,8 +58,10 @@ function Signing() {
 
           <button type="submit" className="sign-in-btn">Sign In</button>
         </form>
+
+        {/* ✅ Fixed path: use Link to="/signup" instead of <a> */}
         <p className="signup-link">
-          Don't have an account? <a href="/Signup">Sign Up</a>
+          Don't have an account? <Link to="/signup">Sign Up</Link>
         </p>
       </div>
     </div>

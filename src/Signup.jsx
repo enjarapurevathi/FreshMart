@@ -8,19 +8,11 @@ function Signup() {
   const navigate = useNavigate();
 
   const onSubmit = (data) => {
-    // Get existing users or initialize empty array
     const existingUsers = JSON.parse(localStorage.getItem('users')) || [];
-
-    // Add new user to array
     existingUsers.push(data);
-
-    // Save updated user list to localStorage
     localStorage.setItem('users', JSON.stringify(existingUsers));
-
     alert("Registration Successful");
-
-    // Redirect to Sign In
-    navigate('/Signing');
+    navigate('/signin'); // ✅ lowercase
   };
 
   return (
@@ -75,7 +67,7 @@ function Signup() {
       </form>
 
       <p>
-        Already have an account? <Link to="/Signing">Sign In</Link>
+        Already have an account? <Link to="/signin">Sign In</Link> {/* ✅ lowercase */}
       </p>
     </div>
   );
